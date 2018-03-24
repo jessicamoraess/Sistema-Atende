@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Orcamentos" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="448aa3e3-178c-4225-94a2-25135ef4c702">
+    <property name="ireport.zoom" value="1.0"/>
+    <property name="ireport.x" value="0"/>
+    <property name="ireport.y" value="53"/>
+    <parameter name="Cod_Orcamento" class="java.lang.Integer">
+        <defaultValueExpression><![CDATA[$F{Cod_Orcamento}]]></defaultValueExpression>
+    </parameter>
+    <queryString>
+		<![CDATA[SELECT
+     orcamento.`Cod_Orcamento` AS orcamento_Cod_Orcamento,
+     orcamento.`Funcionario` AS orcamento_Funcionario,
+     orcamento.`Cliente` AS orcamento_Cliente,
+     orcamento.`Status` AS orcamento_Status,
+     orcamento.`Ano` AS orcamento_Ano,
+     orcamento.`Inicio` AS orcamento_Inicio,
+     orcamento.`Fim` AS orcamento_Fim,
+     orcamento.`Descricao` AS orcamento_Descricao,
+     orcamento.`Desconto` AS orcamento_Desconto,
+     orcamento.`Preco` AS orcamento_Preco,
+     orcamento.`Total` AS orcamento_Total,
+     orcamento.`Qtde` AS orcamento_Qtde,
+     orcamento.`Cod_Instalacao` AS orcamento_Cod_Instalacao,
+     orcamento.`Cod_Manutencao` AS orcamento_Cod_Manutencao
+FROM
+     `orcamento` orcamento]]>
+    </queryString>
+    <field name="Cod_Orcamento" class="java.lang.Integer">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="Funcionario" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="Cliente" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="Status" class="java.lang.Integer">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="Ano" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="Inicio" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="Fim" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="Descricao" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="Desconto" class="java.math.BigDecimal">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="Preco" class="java.math.BigDecimal">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="Total" class="java.math.BigDecimal">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="Qtde" class="java.lang.Integer">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="orcamento_Cod_Orcamento" class="java.lang.Integer"/>
+    <field name="orcamento_Funcionario" class="java.lang.String"/>
+    <field name="orcamento_Cliente" class="java.lang.String"/>
+    <field name="orcamento_Status" class="java.lang.Integer"/>
+    <field name="orcamento_Ano" class="java.lang.String"/>
+    <field name="orcamento_Inicio" class="java.lang.String"/>
+    <field name="orcamento_Fim" class="java.lang.String"/>
+    <field name="orcamento_Descricao" class="java.lang.String"/>
+    <field name="orcamento_Desconto" class="java.math.BigDecimal"/>
+    <field name="orcamento_Preco" class="java.math.BigDecimal"/>
+    <field name="orcamento_Total" class="java.math.BigDecimal"/>
+    <field name="orcamento_Qtde" class="java.lang.Integer"/>
+    <background>
+        <band/>
+    </background>
+    <title>
+        <band height="146">
+            <frame>
+                <reportElement mode="Opaque" x="-20" y="-23" width="595" height="169" forecolor="#006699" backcolor="#006699" uuid="61e7ef44-33b3-4427-b0d6-6bf1a0d35f6b"/>
+                <staticText>
+                    <reportElement x="168" y="4" width="427" height="23" forecolor="#FFFFFF" uuid="a62606bd-3a36-4df9-89e6-f43d62e59ad3"/>
+                    <textElement>
+                        <font size="18" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[ATENDE AR CONDICIONADO E REFRIGERAÇÃO]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="168" y="37" width="407" height="23" forecolor="#FFFFFF" uuid="06ff3680-bba8-4a65-9a23-228f0b6af969"/>
+                    <textElement>
+                        <font size="14" isBold="false"/>
+                    </textElement>
+                    <text><![CDATA[Endereço: RUA INDEPENDENCIA, 104 CIDADE: BARUERI- SP]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="168" y="60" width="407" height="23" forecolor="#FFFFFF" uuid="92ef9b15-3199-46bb-8529-fd6a8945ada7"/>
+                    <textElement>
+                        <font size="14" isBold="false"/>
+                    </textElement>
+                    <text><![CDATA[CEP: 06419-000        Bairro: VILA BOA VISTA        ]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="168" y="86" width="407" height="23" forecolor="#FFFFFF" uuid="e4469147-1e99-444b-896f-2cc0056f634b"/>
+                    <textElement>
+                        <font size="14" isBold="false"/>
+                    </textElement>
+                    <text><![CDATA[Telefone(s): 4198-2180 / 97845-8138      ]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="168" y="109" width="407" height="23" forecolor="#FFFFFF" uuid="8f2a4fae-cc96-4478-9ad2-c87b1bc56d56"/>
+                    <textElement>
+                        <font size="14" isBold="false"/>
+                    </textElement>
+                    <text><![CDATA[E-mail: atendimento@atendeserv.com.br]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="168" y="132" width="407" height="23" forecolor="#FFFFFF" uuid="31c2bd7f-7384-4860-bb2d-76b4d2be246a"/>
+                    <textElement>
+                        <font size="14" isBold="false"/>
+                    </textElement>
+                    <text><![CDATA[Visite-nos: www.atendeserv.com.br]]></text>
+                </staticText>
+                <image>
+                    <reportElement x="0" y="0" width="168" height="169" uuid="f4040621-35d4-49e6-8680-ff69191229ed"/>
+                    <imageExpression><![CDATA["C:\\Users\\Jéssica Moraes\\Pictures\\relatorio.png"]]></imageExpression>
+                </image>
+            </frame>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="60">
+            <staticText>
+                <reportElement x="158" y="10" width="137" height="33" forecolor="#006699" uuid="dce60fe4-1010-49fd-99e4-eaed7519053e"/>
+                <textElement textAlignment="Center">
+                    <font size="20" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Orçamento]]></text>
+            </staticText>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="341" y="10" width="50" height="33" forecolor="#006699" uuid="cd5b3a2d-33ee-42a3-9cea-7ec3aeb8e4a7"/>
+                <textElement textAlignment="Center">
+                    <font size="20" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{Ano}]]></textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="295" y="10" width="24" height="33" forecolor="#006699" uuid="9358e153-dfc9-4c34-93dc-cc42abc12a72"/>
+                <textElement textAlignment="Center">
+                    <font size="20" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{Cod_Orcamento}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="319" y="10" width="22" height="33" forecolor="#006699" uuid="f4da7764-74bd-420a-a68b-11be02d91c85"/>
+                <textElement textAlignment="Center">
+                    <font size="20" isBold="true"/>
+                </textElement>
+                <text><![CDATA[/]]></text>
+            </staticText>
+        </band>
+    </pageHeader>
+    <columnHeader>
+        <band height="159">
+            <line>
+                <reportElement x="-20" y="0" width="595" height="1" forecolor="#666666" uuid="164a5184-39e0-4840-8cf0-5f475710254e"/>
+            </line>
+            <staticText>
+                <reportElement mode="Transparent" x="2" y="41" width="95" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="edf57f13-cda9-4d8b-8ae4-44c1016ee808"/>
+                <textElement>
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Funcionario:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Transparent" x="2" y="21" width="77" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="ae4d123b-0525-4842-978e-b710766e9edc"/>
+                <textElement>
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Cliente:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Transparent" x="2" y="1" width="77" height="19" forecolor="#006699" backcolor="#E6E6E6" uuid="3113dff4-5298-4fbc-b416-cb97abe986d2"/>
+                <textElement>
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Emissão:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Transparent" x="374" y="1" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="0b27ae5a-425a-4fa2-80fc-7ddf0d8da14d"/>
+                <textElement>
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Valido até:]]></text>
+            </staticText>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="100" y="21" width="245" height="20" uuid="50da4368-097e-4e5a-9970-e77f92be5e55"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{Cliente}]]></textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="100" y="1" width="134" height="20" uuid="3c1e17ee-3d8f-458c-bd1b-6379206266db"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{Inicio}]]></textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="100" y="41" width="245" height="20" uuid="8ec5d996-de0a-45f1-9f3a-df7361e502b8"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{Funcionario}]]></textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="453" y="1" width="94" height="20" uuid="6af041e7-b2c6-4e39-a77f-49e9ed4e8b7f"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{Fim}]]></textFieldExpression>
+            </textField>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="44">
+            <line>
+                <reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="803b350b-b47d-4aff-880b-93199277fd87"/>
+            </line>
+            <staticText>
+                <reportElement mode="Transparent" x="2" y="0" width="177" height="19" forecolor="#006699" backcolor="#E6E6E6" uuid="09fac3e7-c073-49b8-a7d2-f872ce9269dd"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Descrição]]></text>
+            </staticText>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="0" y="19" width="179" height="24" uuid="fb235004-a215-423a-a223-029439ed594d"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{Descricao}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement mode="Transparent" x="295" y="0" width="79" height="19" forecolor="#006699" backcolor="#E6E6E6" uuid="7e884d70-e062-4888-a06e-bcc654aca689"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Qtde]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Transparent" x="374" y="0" width="79" height="19" forecolor="#006699" backcolor="#E6E6E6" uuid="9944d4e4-245f-461f-9ff9-5611b6773804"/>
+                <textElement>
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Preço Uni.]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Transparent" x="453" y="0" width="102" height="19" forecolor="#006699" backcolor="#E6E6E6" uuid="935d0818-ad21-41cd-97de-5990553c62b1"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Total Item]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Transparent" x="179" y="1" width="116" height="19" forecolor="#006699" backcolor="#E6E6E6" uuid="0a6864ca-0cbf-424d-ba9b-7ca1481f29ca"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Desconto]]></text>
+            </staticText>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="179" y="19" width="116" height="24" uuid="0b05e4bb-9ae3-46e8-a3f8-f7a65833b20d"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{Desconto}]]></textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="295" y="19" width="79" height="24" uuid="07d65478-4c31-4ab4-9591-8c1375d6901a"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{Qtde}]]></textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="374" y="20" width="79" height="24" uuid="3340a466-9362-478f-a51e-cd0be390cd41"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{Preco}]]></textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="453" y="20" width="102" height="24" uuid="d9644166-20bf-48ce-9b5e-2c7358220d02"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band/>
+    </columnFooter>
+    <pageFooter>
+        <band height="137">
+            <textField>
+                <reportElement mode="Opaque" x="2" y="124" width="513" height="13" backcolor="#E6E6E6" uuid="129c8952-dd9f-4a81-8ae4-7fb28ac9f29f"/>
+                <textElement textAlignment="Right"/>
+                <textFieldExpression><![CDATA["Pag "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+            </textField>
+            <textField evaluationTime="Report">
+                <reportElement mode="Opaque" x="515" y="124" width="40" height="13" backcolor="#E6E6E6" uuid="9fbe6b72-f356-4bbf-883f-cd22b4e80892"/>
+                <textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+            </textField>
+            <textField pattern="EEEEE dd MMMMM yyyy">
+                <reportElement x="2" y="124" width="110" height="13" uuid="1b169516-85b2-4957-accb-7ae0b1dc1071"/>
+                <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement mode="Transparent" x="297" y="0" width="79" height="24" forecolor="#006699" backcolor="#E6E6E6" uuid="449210e2-8951-4405-932c-6175fb25946e"/>
+                <textElement textAlignment="Center">
+                    <font size="18" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Total R$]]></text>
+            </staticText>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="374" y="0" width="181" height="24" uuid="12a9a3b1-f3dd-43f2-8ff3-0375432cc639"/>
+                <textElement textAlignment="Right">
+                    <font size="18"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageFooter>
+    <summary>
+        <band/>
+    </summary>
+</jasperReport>
